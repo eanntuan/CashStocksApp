@@ -15,40 +15,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pTM-rS-iQF">
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pTM-rS-iQF">
                         <rect key="frame" x="15" y="5" width="345" height="61"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BBt-VB-t1t">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="61"/>
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="GRUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGv-zY-CjF">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grubhub Inc." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zru-Sh-Pla">
-                                        <rect key="frame" x="0.0" y="30.5" width="240" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="170" height="30.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9gT-J2-9Z8">
-                                <rect key="frame" x="245" y="0.0" width="100" height="61"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="9gT-J2-9Z8">
+                                <rect key="frame" x="175" y="0.0" width="170" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0O-Jh-GVF">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="61"/>
+                                        <rect key="frame" x="30" y="0.0" width="140" height="30.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiE-xv-deL">
-                                        <rect key="frame" x="0.0" y="61" width="100" height="0.0"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiE-xv-deL">
+                                        <rect key="frame" x="100" y="30.5" width="70" height="30.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGI-SG-arG">
-                                                <rect key="frame" x="10" y="-8" width="80" height="16"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.50%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGI-SG-arG">
+                                                <rect key="frame" x="5" y="7.5" width="60" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -56,15 +56,17 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.84313725490000002" green="0.23137254900000001" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="dGI-SG-arG" secondAttribute="trailing" constant="10" id="Ar4-UB-aWC"/>
+                                            <constraint firstAttribute="trailing" secondItem="dGI-SG-arG" secondAttribute="trailing" constant="5" id="Ar4-UB-aWC"/>
                                             <constraint firstItem="dGI-SG-arG" firstAttribute="centerY" secondItem="UiE-xv-deL" secondAttribute="centerY" id="CSa-dY-KBt"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Ind-Mx-Zdp"/>
-                                            <constraint firstItem="dGI-SG-arG" firstAttribute="leading" secondItem="UiE-xv-deL" secondAttribute="leading" constant="10" id="Wup-e0-1x1"/>
-                                            <constraint firstAttribute="width" priority="250" constant="100" id="adK-xT-wgv"/>
+                                            <constraint firstAttribute="width" constant="70" id="Ind-Mx-Zdp"/>
+                                            <constraint firstItem="dGI-SG-arG" firstAttribute="leading" secondItem="UiE-xv-deL" secondAttribute="leading" constant="5" id="Wup-e0-1x1"/>
                                             <constraint firstItem="dGI-SG-arG" firstAttribute="centerX" secondItem="UiE-xv-deL" secondAttribute="centerX" id="wLe-k9-6ns"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="g0O-Jh-GVF" firstAttribute="width" secondItem="UiE-xv-deL" secondAttribute="width" multiplier="2" id="Wcd-3G-3kh"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                     </stackView>
@@ -81,9 +83,10 @@
             </tableViewCellContentView>
             <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
-                <outlet property="percentageWrapper" destination="UiE-xv-deL" id="qCL-td-PPE"/>
+                <outlet property="percentageWrapper" destination="UiE-xv-deL" id="Hh6-Dz-5jw"/>
                 <outlet property="stockFullName" destination="Zru-Sh-Pla" id="0WD-ra-Tqm"/>
                 <outlet property="stockName" destination="vGv-zY-CjF" id="7oF-YZ-4qe"/>
+                <outlet property="stockPercentageChange" destination="dGI-SG-arG" id="4bd-4J-ziQ"/>
                 <outlet property="stockPrice" destination="g0O-Jh-GVF" id="DVO-yU-gmG"/>
             </connections>
             <point key="canvasLocation" x="-31" y="134"/>

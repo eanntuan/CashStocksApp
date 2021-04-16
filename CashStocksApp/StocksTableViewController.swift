@@ -44,12 +44,15 @@ class StocksTableViewController: UITableViewController {
     super.viewDidLoad()
     setupSearchBar()
     fetchStockPrices()
+    configureNavigation()
     
     tableView.separatorInset.left = 0
     tableView.backgroundColor = UIColor.black
     tableView.register(UINib(nibName: "StockCell", bundle: nil), forCellReuseIdentifier: "stock")
     tableView.register(UINib(nibName: "LoadingCell", bundle: nil), forCellReuseIdentifier: "LoadingCell")
-    
+  }
+  
+  func configureNavigation() {
     navigationController?.navigationBar.prefersLargeTitles = true
     navigationItem.setTitle("Stocks")
     navigationController?.navigationBar.tintColor = .white
@@ -114,7 +117,18 @@ class StocksTableViewController: UITableViewController {
     }
   }
   
+  override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+      // Don't allow the last "Add a Track" cell to be edited
+    return .delete
+  }
   
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    // Swipe to delete
+    searchController.isActive = false
+    stocks.remove(at: indexPath.row)
+    tableView.reloadData()
+  }
+
   private func fetchStockPrices() {
     print(#function)
     guard !isFetchingStocks else { return }
@@ -184,12 +198,4 @@ extension UINavigationItem {
     self.titleView = stackView
   }
   
-}
-
-extension Array where Element: Hashable {
-  func difference(from other: [Element]) -> [Element] {
-    let thisSet = Set(self)
-    let otherSet = Set(other)
-    return Array(thisSet.symmetricDifference(otherSet))
-  }
 }

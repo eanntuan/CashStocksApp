@@ -101,8 +101,14 @@
 			children = (
 				E67001FC2629E6A800BDAA3C /* Views */,
 				E67001F72629E68700BDAA3C /* Supporting Files */,
-				E67001F62629E66A00BDAA3C /* Nibs */,
 				E643891026274EC3003C5422 /* AppDelegate.swift */,
+				E64389C82627959E003C5422 /* CodableExtension.swift */,
+				E643895226275132003C5422 /* WebService.swift */,
+				E67001D42628D48C00BDAA3C /* AccessibilityIdentifiers.swift */,
+				E643894826274F0D003C5422 /* StockCell.xib */,
+				E64389D126288C71003C5422 /* LoadingCell.xib */,
+				E64389D626288CB1003C5422 /* LoadingCell.swift */,
+				E643894326274EE8003C5422 /* StockCell.swift */,
 				E643891226274EC3003C5422 /* SceneDelegate.swift */,
 				E643891626274EC3003C5422 /* Main.storyboard */,
 				E643891926274EC5003C5422 /* Assets.xcassets */,
@@ -125,21 +131,9 @@
 			path = CashStocksAppUITests;
 			sourceTree = "<group>";
 		};
-		E67001F62629E66A00BDAA3C /* Nibs */ = {
-			isa = PBXGroup;
-			children = (
-				E643894826274F0D003C5422 /* StockCell.xib */,
-				E64389D126288C71003C5422 /* LoadingCell.xib */,
-			);
-			path = Nibs;
-			sourceTree = "<group>";
-		};
 		E67001F72629E68700BDAA3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E64389C82627959E003C5422 /* CodableExtension.swift */,
-				E67001D42628D48C00BDAA3C /* AccessibilityIdentifiers.swift */,
-				E643895226275132003C5422 /* WebService.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,8 +141,6 @@
 		E67001FC2629E6A800BDAA3C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E643894326274EE8003C5422 /* StockCell.swift */,
-				E64389D626288CB1003C5422 /* LoadingCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
